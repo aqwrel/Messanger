@@ -1,0 +1,26 @@
+.user-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    &_nickname {
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    &_avatar {
+        position: relative;
+    }
+    &_status {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        &--online {
+            background: green;
+        }
+        &--offline {
+            background: red;
+        }
+    }
+}

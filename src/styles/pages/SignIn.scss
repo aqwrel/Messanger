@@ -1,0 +1,18 @@
+.sign-in {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        min-width: 300px;
+    }
+
+    &_title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

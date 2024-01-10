@@ -1,0 +1,18 @@
+@import './base/_reset.scss';
+@import './base/_variables.scss';
+@import './base/_typography.scss';
+
+// Pages
+@import './pages/SignIn.scss';
+@import './pages/chats.scss';
+
+// Components
+@import './components/input.scss';
+@import './components/button.scss';
+@import './components/avatar.scss';
+@import './components/userItem.scss';
+
+body {
+    background: $background;
+    font-family: Arial, Helvetica, sans-serif;
+}
