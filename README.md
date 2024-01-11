@@ -1,1 +1,1 @@
-https://app.netlify.com/sites/unrivaled-starship-8016e3/deploys
+https://unrivaled-starship-8016e3.netlify.app/
