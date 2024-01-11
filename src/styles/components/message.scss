@@ -1,0 +1,24 @@
+.message {
+    max-width: 50%;
+    width: 100%;
+    &_author{
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    &_content {
+        padding: 20px;
+        border-radius: 15px;
+        &--left {
+            background: #f8f8f8;
+            color: #000;
+        }
+        &--right {
+            background: #476cff;
+            color: #fff;
+        }
+    }
+
+    &--left {
+        margin-left: auto;
+    }
+}

@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     margin: 10px 0;
+    cursor: pointer;
     &_nickname {
         margin-left: 10px;
         font-weight: bold;
@@ -22,5 +23,9 @@
         &--offline {
             background: red;
         }
+    }
+
+    &--active {
+        color: green;
     }
 }

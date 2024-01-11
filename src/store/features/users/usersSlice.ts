@@ -18,18 +18,28 @@ const initialState: UsersState = {
   users: [],
 }
 
+export interface ChangeStatus {
+  id: number,
+  status: boolean,
+}
+
+
 export const usersSlice = createSlice({
   name: 'users',
   // `createSlice` will infer the state type from the `initialState` argument
   initialState,
   reducers: {
     push: (state, action: PayloadAction<User>) => {
-      state.users.push(action.payload)
+      state.users.unshift(action.payload)
+    },
+    setStatus: (state, action: PayloadAction<ChangeStatus>) => {
+      const index = state.users.findIndex((item) => item.id === action.payload.id)
+      state.users[index].isOnline = action.payload.status
     },
   },
 })
 
-export const { push } = usersSlice.actions
+export const { push, setStatus } = usersSlice.actions
 
 // Other code such as selectors can use the imported `RootState` type
 export const selectCount = (state: RootState) => state.users

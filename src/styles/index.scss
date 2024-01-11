@@ -5,12 +5,14 @@
 // Pages
 @import './pages/SignIn.scss';
 @import './pages/chats.scss';
+@import './pages/chat.scss';
 
 // Components
 @import './components/input.scss';
 @import './components/button.scss';
 @import './components/avatar.scss';
 @import './components/userItem.scss';
+@import './components/message.scss';
 
 body {
     background: $background;
